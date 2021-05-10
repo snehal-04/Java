@@ -1,0 +1,17 @@
+public class basic {
+		public static void main(String args[]){
+			System.out.println("Hello World");
+			System.out.println("Holaa");
+			int num=10;
+			int x=20;
+			double d=20.5;
+			boolean flag=true;
+			String s="snehal";
+			
+			System.out.println(num);
+			System.out.println(x);
+			System.out.println(d);
+			System.out.println(flag);
+			System.out.println(s);
+		}
+	}
