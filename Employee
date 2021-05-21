@@ -1,0 +1,47 @@
+import java.util.*;
+public class empp 
+{
+	
+		String name;
+		int salary;
+		int year;
+		String address;
+		 
+		void accept()
+		{
+			Scanner in=new Scanner(System.in);
+			System.out.println("Enter name");
+			name=in.next();
+			
+			System.out.println("Enter Address");
+			address=in.next();	
+			
+			System.out.println("Enter salary");
+			salary=in.nextInt();
+			
+			System.out.println("Enter year of joining");
+			year=in.nextInt();
+			
+			
+		}
+		
+		void display()
+		{
+			System.out.println(name+"\t"+address+"\t"+salary+"\t"+year);
+		}
+
+	public static void main(String args[])
+	{
+		empp e[]=new empp[3];
+		int i;
+		System.out.println("Enter Employee Data");
+		for(i=0;i<3;i++)
+		{
+			e[i]=new empp();
+			e[i].accept();
+		}
+		System.out.println("Employee details:");
+		for(i=0;i<3;i++)
+			e[i].display();
+		}
+	}
